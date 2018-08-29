@@ -21,7 +21,7 @@ Function for waiting end of excecution of pthread pool
 ```c
 int tp_wait_for_queue(t_tp_thread *queue);
 ```
-Function for get number of working pthreads
+Function for get number of processor cores
 ```c
 int tp_get_nbr_proc(void);
 ```
