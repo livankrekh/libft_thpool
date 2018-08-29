@@ -10,6 +10,6 @@ Result: libft_thpool.a
 
 ## Library functions
 Function to create a pool struct named `t_tp_thread`
-```
+```c
 t_tp_thread		*tp_create(int count, char flag);
 ```
