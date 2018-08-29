@@ -10,8 +10,11 @@ Result: libft_thpool.a
 
 ## Library functions
 Function to create a pool struct named `t_tp_thread`
+
 `int count` - number of threads
+
 `char flag` - `TP_ON_EXEC` (execute pool on new task adding) or `TP_ON_START` (execution on pool creating)
+
 ```c
 t_tp_thread *tp_create(int count, char flag);
 ```
