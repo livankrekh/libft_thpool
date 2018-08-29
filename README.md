@@ -9,7 +9,7 @@
 Result: libft_thpool.a
 
 ## Library functions
-Function to create a pool struct named `t_tp_thread`
+#### Function to create a pool struct named `t_tp_thread`
 
 `int count` - number of threads
 
@@ -18,7 +18,7 @@ Function to create a pool struct named `t_tp_thread`
 ```c
 t_tp_thread *tp_create(int count, char flag);
 ```
-Function to execute task (function f) on created pthread pool
+#### Function to execute task (function f) on created pthread pool
 
 `t_tp_thread *queue` - pthread pool
 
@@ -29,14 +29,14 @@ Function to execute task (function f) on created pthread pool
 ```c
 int tp_exec_queue_add(t_tp_thread *queue, void *(*f)(void *), void *data);
 ```
-Function for waiting end of execution of pthread pool
+#### Function for waiting end of execution of pthread pool
 
 `t_tp_thread *queue` - pthread pool
 
 ```c
 int tp_wait_for_queue(t_tp_thread *queue);
 ```
-Function for get number of processor cores
+#### Function for get number of processor cores
 
 ```c
 int tp_get_nbr_proc(void);
